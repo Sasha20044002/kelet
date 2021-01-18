@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "MuseoSansCyrl-300";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl-500";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl-700";
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  margin: 0 auto 23px;
+  padding-top: 20px;
+  width: 1162px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo_img {
+  margin: 0 0 6.76px 0;
+}
+
+.header_logo_line_1 {
+  margin: 0 0 2.82px -10px;
+}
+
+.header_logo_line_2 {
+  margin-left: -10px;
+}
+
+.header_social a {
+  text-decoration: none;
+}
+
+.header_social a:nth-child(2) {
+  margin: 0 14px 0 14px;
+}
+
+.header_select {
+  color: #2B2B2B;
+  line-height: 17px;
+  font-size: 14px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_select::after {
+  content: '';
+  border: 5px solid transparent;
+  border-top: 6px solid #2B2B2B;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.header_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_form_input {
+  width: 285px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  background: #DFDFDF;
+  border-radius: 2px 0px 0px 2px;
+  border: none;
+}
+
+.header_form_input:focus,
+.header_form_input:active {
+  outline: none;
+}
+
+.header_form_label {
+  width: 45px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #275C3E;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 1162px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_select {
+  width: 254px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_select a {
+  text-decoration: none;
+}
+
+.nav_select_item {
+  position: relative;
+}
+
+.nav_select_item .nav_select_item_list:hover {
+  display: block;
+}
+
+.nav_select_item_link {
+  display: block;
+  padding: 18px 51.5px 18px 24.5px;
+  color: white;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  text-transform: uppercase;
+  background: #275C3E;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.nav_select_item_link::before {
+  content: url(../img/burger-menu-for-nav.svg);
+  margin-right: 15px;
+}
+
+.nav_select_item_link:hover ~ .nav_select_item_list {
+  display: block;
+  position: absolute;
+  top: 58px;
+  left: 0;
+}
+
+.nav_select_item_list {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+  top: 58px;
+  left: 0;
+  z-index: 5;
+}
+
+.nav_select_item_list:hover {
+  display: block;
+}
+
+.nav_select_item_list_item {
+  border-bottom: 1px solid #D5D5D5;
+  position: relative;
+}
+
+.nav_select_item_list_item_link {
+  display: block;
+  padding: 17px 0 14px 21px;
+  color: #2B2B2B;
+  line-height: 16px;
+  font-size: 13px;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  background-color: #fff;
+}
+
+.nav_select_item_list_item_link::after {
+  content: url(../img/arrow-nav.svg);
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+}
+
+.nav_select_item_list_item_link:hover {
+  padding-left: 18px;
+  border-left: 3px solid #275C3E;
+  color: #E54446;
+  position: relative;
+}
+
+.nav_select_item_list_item_link:hover::after {
+  content: url(../img/arrow-nav-hover.svg);
+}
+
+.nav_select_item_list_item_link:hover ~ .nav_select_item_list_item_list {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -220px;
+}
+
+.nav_select_item_list_item .still {
+  color: #C6C6C6;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  background: #275C3E;
+  border-radius: 0px 0px 2px 2px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_select_item_list_item .still::before {
+  content: '+';
+  color: #C6C6C6;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.nav_select_item_list_item .still::after {
+  display: none;
+}
+
+.nav_select_item_list_item_list {
+  display: none;
+  list-style-type: none;
+}
+
+.nav_select_item_list_item_list:hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -220px;
+}
+
+.nav_select_item_list_item_list_item_link {
+  display: block;
+  color: #898989;
+  line-height: 14px;
+  font-size: 12px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  padding: 9px 0 8px 18px;
+  background-color: #fff;
+}
+
+.nav_select_item_list_item_list_item_link:hover {
+  color: #2B2B2B;
+  background-color: #DFDFDF;
+  border-right: 2px;
+}
+
+.nav_list {
+  margin-top: 20px;
+  width: 861px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_list_item_link {
+  color: #2B2B2B;
+  line-height: 16px;
+  font-size: 13px;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav_list_item_link:hover {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #FB1A05;
+}
+
+.main .slider .back {
+  position: relative;
+}
+
+.main .slider_back {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main .slider_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -142.5px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.main .slider_content_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .slider_content_text_title {
+  color: black;
+  line-height: 43px;
+  font-size: 36px;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.main .slider_content_text_text {
+  color: #2B2B2B;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: "MuseoSansCyrl-300", sans-serif;
+  width: 379px;
+}
